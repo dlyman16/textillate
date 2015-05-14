@@ -166,7 +166,9 @@
             })
             .each(function () { $(this).lettering() });
       }
-
+      
+      $('span[class^="word"]:empty').css("display", "none");
+       
       $tokens = base.$current
         .find('[class^="' + base.options.type + '"]')
         .css('display', 'inline-block');
